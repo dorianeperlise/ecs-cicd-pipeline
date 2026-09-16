@@ -57,9 +57,22 @@ jobs:
         run: |
           docker push \
           ${{ steps.login-ecr.outputs.registry }}/${{ vars.ECR_REPOSITORY }}:${{ github.sha }}
-      - name: Update ECS Service
+      - name: Download current task definition
         run: |
-          aws ecs update-service \
-            --cluster nginx-ecs-cluster \
-            --service nginx-service \
-            --force-new-deployment
+          aws ecs describe-task-definition --task-definition nginx-task \
+          --query taskDefinition > task-def.json
+
+      - name: Update image in task definition
+        id: task-def
+        uses: aws-actions/amazon-ecs-render-task-definition@v1
+        with:
+          task-definition: task-def.json
+          container-name: nginx
+          image: ${{ steps.login-ecr.outputs.registry }}/${{ vars.ECR_REPOSITORY }}:${{ github.sha }}
+
+      - name: Deploy to ECS
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v2
+        with:
+          task-definition: ${{ steps.task-def.outputs.task-definition }}
+          service: nginx-service
+          cluster: nginx-ecs-cluster
