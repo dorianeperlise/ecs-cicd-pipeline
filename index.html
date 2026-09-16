@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Cloud Engineer Resume</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #2b2d42;
+            background-color: #f8f9fa;
+            line-height: 1.35;
+            font-size: 10.5pt;
+        }
+        .page {
+            width: 8.5in;
+            height: 11in;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 0.4in 0.5in;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        header {
+            border-bottom: 2px solid #2b2d42;
+            padding-bottom: 8px;
+            margin-bottom: 10px;
+        }
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        h1 {
+            font-size: 20pt;
+            color: #1a365d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .title {
+            font-size: 11pt;
+            font-weight: 600;
+            color: #4a5568;
+        }
+        .contact {
+            display: flex;
+            gap: 12px;
+            font-size: 9pt;
+            margin-top: 4px;
+            color: #4a5568;
+        }
+        .contact a {
+            color: #2b6cb0;
+            text-decoration: none;
+        }
+        section {
+            margin-bottom: 8px;
+        }
+        h2 {
+            font-size: 11pt;
+            color: #1a365d;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 2px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .summary {
+            font-size: 9.5pt;
+            color: #2d3748;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3px 15px;
+            font-size: 9pt;
+        }
+        .skill-category {
+            display: flex;
+        }
+        .skill-title {
+            font-weight: bold;
+            width: 110px;
+            flex-shrink: 0;
+            color: #2d3748;
+        }
+        .job {
+            margin-bottom: 8px;
+        }
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 10pt;
+        }
+        .company {
+            color: #1a365d;
+        }
+        .location-date {
+            color: #718096;
+            font-weight: normal;
+            font-size: 9pt;
+        }
+        .job-title {
+            font-style: italic;
+            color: #4a5568;
+            font-size: 9.5pt;
+            margin-bottom: 3px;
+        }
+        ul {
+            list-style-type: square;
+            margin-left: 16px;
+        }
+        li {
+            font-size: 9pt;
+            margin-bottom: 2px;
+            color: #2d3748;
+        }
+        .edu-cert {
+            display: flex;
+            justify-content: space-between;
+        }
+        .item-title {
+            font-weight: bold;
+            font-size: 9.5pt;
+        }
+        .item-sub {
+            font-size: 9pt;
+            color: #4a5568;
+        }
+
+        @media print {
+            body {
+                background: none;
+            }
+            .page {
+                width: 100%;
+                height: 100vh;
+                padding: 0;
+                margin: 0;
+            }
+            @page {
+                size: letter;
+                margin: 0.4in 0.5in;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div>
+            <!-- Header -->
+            <header>
+                <div class="header-top">
+                    <h1>Alex Mercer</h1>
+                    <span class="title">Senior DevOps & Cloud Engineer</span>
+                </div>
+                <div class="contact">
+                    <span>📱 (555) 019-2834</span> |
+                    <span>✉️ alex.mercer@email.com</span> |
+                    <span>📍 Austin, TX</span> |
+                    <span>🔗 <a href="#">linkedin.com/in/alex-mercer</a></span> |
+                    <span>💻 <a href="#">github.com/alex-mercer</a></span>
+                </div>
+            </header>
+
+            <!-- Summary -->
+            <section>
+                <h2>Professional Summary</h2>
+                <p class="summary">
+                    Results-driven Senior DevOps & Cloud Engineer with 6 years of experience designing, automating, and scaling multi-cloud infrastructure (AWS/GCP). Proven expertise in IaC, Kubernetes orchestration, and building resilient CI/CD pipelines. Reduced deployment lead times by 65% and cut cloud infrastructure costs by 30% across fast-paced enterprise environments.
+                </p>
+            </section>
+
+            <!-- Technical Skills -->
+            <section>
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <span class="skill-title">Cloud Platforms:</span>
+                        <span>AWS (EC2, EKS, S3, RDS, Lambda), GCP</span>
+                    </div>
+                    <div class="skill-category">
+                        <span class="skill-title">Containers & Orchestration:</span>
+                        <span>Kubernetes, Docker, Helm, Istio</span>
+                    </div>
+                    <div class="skill-category">
+                        <span class="skill-title">Infrastructure as Code:</span>
+                        <span>Terraform, Terragrunt, CloudFormation</span>
+                    </div>
+                    <div class="skill-category">
+                        <span class="skill-title">CI/CD Tools:</span>
+                        <span>GitLab CI, GitHub Actions, Jenkins, ArgoCD</span>
+                    </div>
+                    <div class="skill-category">
+                        <span class="skill-title">Monitoring & Logs:</span>
+                        <span>Prometheus, Grafana, Datadog, ELK Stack</span>
+                    </div>
+                    <div class="skill-category">
+                        <span class="skill-title">Scripting & Code:</span>
+                        <span>Python, Bash, Go, YAML, HCL</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section>
+                <h2>Professional Experience</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <span class="company">CloudScale Solutions Inc.</span>
+                        <span class="location-date">Austin, TX | 2023 – Present</span>
+                    </div>
+                    <div class="job-title">Senior DevOps Engineer</div>
+                    <ul>
+                        <li>Architected production-grade AWS infrastructure using <strong>Terraform</strong> and <strong>EKS</strong>, scaling application workloads across 4 regions with 99.99% uptime.</li>
+                        <li>Implemented GitOps workflows using <strong>ArgoCD</strong> and GitHub Actions, automating deployments for 40+ microservices and cutting deployment time from 45 min to 8 min.</li>
+                        <li>Designed Cloud Cost Optimization (FinOps) strategies, utilizing AWS Savings Plans and Spot Instances to save $180k annually (30% reduction).</li>
+                        <li>Integrated SonarQube, Trivy, and HashiCorp Vault into CI/CD pipelines to enforce security scanning and automated secret management (DevSecOps).</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="company">Apex FinTech Systems</span>
+                        <span class="location-date">Dallas, TX | 2020 – 2023</span>
+                    </div>
+                    <div class="job-title">Cloud DevOps Engineer</div>
+                    <ul>
+                        <li>Migrated legacy monolithic applications from on-premise virtual machines to containerized <strong>Docker</strong> workloads running on AWS ECS and EKS.</li>
+                        <li>Built centralized monitoring and alerting dashboards using <strong>Prometheus</strong> and <strong>Grafana</strong>, decreasing MTTR for critical incidents by 40%.</li>
+                        <li>Automated database provisioning and database migration tasks for PostgreSQL using Ansible and Terraform.</li>
+                        <li>Mentored 3 junior engineers on Docker best practices, Kubernetes configuration management, and modern CI/CD patterns.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="company">NexGen Tech Solutions</span>
+                        <span class="location-date">Dallas, TX | 2018 – 2020</span>
+                    </div>
+                    <div class="job-title">Junior Cloud / Systems Administrator</div>
+                    <ul>
+                        <li>Managed Linux/Windows server administration, network security rules, and user access roles across AWS (IAM).</li>
+                        <li>Wrote custom <strong>Python</strong> and <strong>Bash</strong> scripts to automate routine log cleanups, backup validations, and system updates.</li>
+                        <li>Maintained Jenkins pipelines and supported developer teams with build failure troubleshooting.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section>
+                <h2>Certifications</h2>
+                <div class="edu-cert" style="margin-bottom: 4px;">
+                    <div>
+                        <span class="item-title">AWS Certified Solutions Architect – Associate</span> | 
+                        <span class="item-sub">Amazon Web Services</span>
+                    </div>
+                    <span class="location-date">Issued 2024</span>
+                </div>
+                <div class="edu-cert">
+                    <div>
+                        <span class="item-title">Certified Kubernetes Administrator (CKA)</span> | 
+                        <span class="item-sub">Linux Foundation</span>
+                    </div>
+                    <span class="location-date">Issued 2023</span>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section>
+                <h2>Education</h2>
+                <div class="edu-cert">
+                    <div>
+                        <span class="item-title">B.S. in Computer Science</span> | 
+                        <span class="item-sub">University of Texas at Dallas</span>
+                    </div>
+                    <span class="location-date">Graduated 2018</span>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
